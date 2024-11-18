@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-Genda - Criar Conta</title>
+  <link rel="stylesheet" href="assets/css/conta.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="assets/js/conta.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <div class="box-login">
+      <h1>On-Genda<br>Crie sua conta</h1>
+      <div class="box-account">
+        <h2>Informe seus dados</h2>
+        <input type="text" id="username" placeholder="Apelido" required>
+        <input type="email" id="email" placeholder="E-mail" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <div class="check">
+          <input type="checkbox" id="termo">
+          <label for="termo">Li e aceito os termos</label>
+        </div>
+        <button onclick="createAccount()">Criar Conta</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
